@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+/*  */
+
+
+:root{
+    --bgbtn: #198754;
+    --bbcolor: #198754;
+}
+
+.bcg-pink{
+    background: var(--bgbtn);
+}
+.txt-pink{
+    color: var(--bbcolor);
+}
+
+.bton{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: var(--bbcolor);
+    text-transform: uppercase;
+    padding: 14px 35px;
+ 
+}
+.bton:hover{
+    background-color: var(--bbcolor);
+    opacity: 0.75;
+}
+
+/*  */
+.section1 h1{
+    font-family:'Cardo', serif;
+
+}
+
+
+/* Card */
+.icon-box .icon i{
+    position: relative;
+    z-index: 85;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    /* color: white;
+    background-color: aqua; */
+}
+.icon-box .icon i:after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -45%;
+    left: -75%;
+    background-color: #161718;
+    border-radius: 50%;
+    z-index: -1;
+}
+.icon-box p{
+    font-size: 0.9rem;
+    /* width: 85%; */
+
+}
+
+.input-box input::placeholder{
+    /* color: #474646; */
+    /* color: #45454590; */
+    font-size: 15px;
+}
+.icon i{
+    color: #27A776;
+}
+.icon-box:hover .icon i{
+    color: white;
+} 
+
+.icon-box:hover .icon i:after{
+    background-color: #27A776;
+}

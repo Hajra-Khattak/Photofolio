@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+
+/*  */
+
+
+:root{
+    --bgbtn: #198754;
+    --bbcolor: #198754;
+}
+
+.bcg-pink{
+    background: var(--bgbtn);
+}
+.txt-pink{
+    color: var(--bbcolor);
+}
+
+.bton{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: var(--bbcolor);
+    text-transform: uppercase;
+    padding: 14px 35px;
+ 
+}
+.bton:hover{
+    background-color: var(--bbcolor);
+    opacity: 0.75;
+}
+
+/*  */
+.section1 h1{
+    font-family:'Cardo', serif;
+
+}
+
+
+/*  */
+.section2 .container .content p{
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5rem;
+
+}
+
+/* Prices */
+.price-header .price{
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    font-family:  monospace;
+}
+.price-header p.price:before{
+    content: '';
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: 49%;
+    left: 6%;
+    background-color: #198754;
+}
+
+
+
+
+/*  */
+.lists div{
+    border-bottom: 1px dashed rgba(113, 112, 112, 0.886);
+}
+
+/* Testimonial */
+.testimonial-header .testimon{
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    font-family:  monospace;
+}
+.testimonial-header p.testimon:before{
+    content: '';
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    top: 49%;
+    left: 12%;
+    background-color: #198754;    
+}
+
+@media screen and (max-width: 425px){
+    .testimonial-header p.testimon:before{
+        content: '';
+        width: 150px;
+        height: 2px;
+        position: absolute;
+        top: 49%;
+        left: 33%;
+        background-color: #198754;    
+    }
+}
+
+.testimonial-header p ,.price-header p{
+    font-family:'Cardo', serif;
+}
+.owl-theme.owl-item.active{
+    background-color: #198754;
+    transform: translateY(50%);
+    transform: scaleY(2);
+}
+.owl-item .item .carousal{
+    width: 80%;
+    opacity: 0.4;
+    transform: scale(0.8);
+}
+.owl-item.active.center .item .carousal{
+    background-color: #198754 !important;
+    opacity: 1 !important;
+    transform: scale(1);
+}
+.owl-item.active.center .item .slider{
+    /* transform: scale(1.2);  */
+    /* opacity: 1; */
+}
+
+
+/* Cards  */
+.card{
+    position: relative;
+    /* transition: 1s; */
+    overflow: hidden;
+}
+.card:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #198754;
+    opacity: 1;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+.icon-card:hover .card:before{
+    transform: translateY(0%);
+}
+.icon-card:hover .card .icon i:after{
+    background-color: white;
+}
+.icon-card:hover .card .icon i{
+    color: #27A776;
+}
+
+.card .icon i{
+    z-index: 5;
+}
+
+.card .icon i{
+    position: relative;
+    z-index: 85;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    /* color: white;
+    background-color: aqua; */
+}
+.card .icon i:after{
+    content: '';
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -35%;
+    left: -59%;
+    background-color: #27A776;
+    border-radius: 50%;
+    z-index: -1;
+}
+.card .title{
+    font-size: 1.3rem;
+}
+.card p{
+    font-size: 0.9rem;
+
+}
